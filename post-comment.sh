@@ -1,7 +1,16 @@
 #!/bin/bash
 
 if [ -z "${MESSAGE}" ]; then
-  MESSAGE="Uhull, nosso ambiente de teste está criado. Bora fazer testes agora. :point_down: :point_down: :point_down: \\n\\n [Ambiente de testes](${URL})";
+
+  if [ -n "${URL_FRONTEND}" ]; then
+    FILE_PHRASES="phrases-with-frontend.list";
+  else
+    FILE_PHRASES="phrases.list";
+  fi
+
+  dockerize -template ${FILE_PHRASES}:${FILE_PHRASES}
+
+  MESSAGE=$(tail ${FILE_PHRASES} | shuf | head -n 1)
 fi
 
 echo "PR: ${PR_NUMBER}";

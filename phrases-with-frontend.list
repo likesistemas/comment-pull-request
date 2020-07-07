@@ -1,0 +1,4 @@
+Uhull, nosso ambiente de teste está criado. Bora fazer testes agora. :point_down: :point_down: :point_down: \n\n [Frontend]({{ .Env.URL_FRONTEND }}) e [Backend]({{ .Env.URL }})
+Viva, mais um ambiente criado, agora é com vocês testers :point_down: :point_down: :point_down: \n\n  [Frontend]({{ .Env.URL_FRONTEND }}) e [Backend]({{ .Env.URL }})
+Segue o endereço para fazer os testes :point_down: :point_down: :point_down: \n\n  [Frontend]({{ .Env.URL_FRONTEND }}) e [Backend]({{ .Env.URL }})
+Parabéns dev, cruza os dedos ai para dar tudo certo, corre lá testar :runner: :runner: :point_down: \n\n [Frontend]({{ .Env.URL_FRONTEND }}) e [Backend]({{ .Env.URL }})
